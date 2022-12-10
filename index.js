@@ -8,6 +8,8 @@ const { response } = require("express")
 const myPrivateKey = 'asohmwkdib3ijn3vbbs9ejb5ja09djnwmmw'
 const Web3 = require("web3")
 const { ethers } = require('ethers')
+const dotenv = require('dotenv');
+dotenv.config();
 
 //Sanity Client configuration
 const client = sanityClient({
@@ -20,6 +22,7 @@ const client = sanityClient({
 })
 
 const trnxLimit = 30
+const port = process.env.PORT
 
 const app = express()
 const web3 = new Web3()
@@ -180,4 +183,4 @@ setTimeout(async () => {
     //clearFields()
 }, POLLING_INTERVAL);
 
-app.listen(8284, () => console.log('Listening at 8284'))
+app.listen(port, () => console.log(`Listening at ${port}`))

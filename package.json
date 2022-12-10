@@ -17,6 +17,7 @@
     "@sanity/client": "^3.4.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
     "express": "^4.18.1",
     "keccak256": "^1.0.6",
