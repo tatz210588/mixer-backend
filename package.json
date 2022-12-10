@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "payment gateway backend",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/cli": "^2.33.3",
+    "@sanity/client": "^3.4.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "ethers": "^5.7.2",
+    "express": "^4.18.1",
+    "keccak256": "^1.0.6",
+    "nodemon": "^2.0.20",
+    "web3": "^1.8.1"
+  }
+}
